@@ -37,7 +37,7 @@ public class IsoscelesTest {
 	 */
 	@Before
 	public void setUp() throws Exception {
-		isosceles = new Isosceles(5,2);
+		isosceles = new Isosceles(5,2,2);
 	}
 
 	/**
@@ -53,7 +53,7 @@ public class IsoscelesTest {
 	 */
 	@Test
 	public final void testPerimeter() {
-		assertEquals(12, isosceles.perimeter(),1.0e-4);
+		assertEquals(9, isosceles.perimeter(),1.0e-4);
 	}
 
 	/**

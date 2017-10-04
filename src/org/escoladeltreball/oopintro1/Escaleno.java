@@ -8,14 +8,18 @@ package org.escoladeltreball.oopintro1;
  *
  */
 public class Escaleno extends Triangle {
-
+	
+	private double side1;
+	private double side2;
+	
 	/**
 	 * @param base
 	 * @param height
 	 */
-	public Escaleno(double base, double height) {
+	public Escaleno(double base, double height, double side1, double side2) {
 		super(base, height);
-		// TODO Auto-generated constructor stub
+		this.side1 = side1;
+		this.side2 = side2;
 	}
 
 	/* (non-Javadoc)
@@ -23,7 +27,7 @@ public class Escaleno extends Triangle {
 	 */
 	@Override
 	public double perimeter() {
-		return 3 * base + height;
+		return base + side1 + side2;
 	}
 
 }

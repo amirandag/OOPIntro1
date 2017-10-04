@@ -37,7 +37,7 @@ public class EscalenoTest {
 	 */
 	@Before
 	public void setUp() throws Exception {
-		escaleno = new Escaleno(5,2);
+		escaleno = new Escaleno(5,2,2,2);
 	}
 
 	/**
@@ -53,7 +53,7 @@ public class EscalenoTest {
 	 */
 	@Test
 	public final void testPerimeter() {
-		assertEquals(17, escaleno.perimeter(),1.0e-4);
+		assertEquals(9, escaleno.perimeter(),1.0e-4);
 	}
 
 	/**

@@ -9,13 +9,15 @@ package org.escoladeltreball.oopintro1;
  */
 public class Isosceles extends Triangle {
 
+	private double side;
+	
 	/**
 	 * @param base
 	 * @param height
 	 */
-	public Isosceles(double base, double height) {
+	public Isosceles(double base, double height, double side) {
 		super(base, height);
-		// TODO Auto-generated constructor stub
+		this.side = side;
 	}
 
 	/* (non-Javadoc)
@@ -24,7 +26,7 @@ public class Isosceles extends Triangle {
 	@Override
 	public double perimeter() {
 		// TODO Auto-generated method stub
-		return 2 * base + height;
+		return 2 * side + base;
 	}
 
 }
